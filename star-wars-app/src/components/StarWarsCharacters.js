@@ -15,10 +15,10 @@ export default function StarWarsCharacters() {
     const getCharacters = async () => {
       const characters = await getData(url);
       console.log(characters);
-      setNext(characters.next);
-      setPrevious(characters.previous);
-      setCharacters(characters.results);
-      setIsLoading(false);
+      // setNext(characters.next);
+      // setPrevious(characters.previous);
+      // setCharacters(characters.results);
+      // setIsLoading(false);
     };
     getCharacters();
   }, [url]);
